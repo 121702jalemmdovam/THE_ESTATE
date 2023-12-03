@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    position: relative;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    z-index: 4;
+    position: absolute;
+    background-color: $header-bg;
+    border-bottom: 2px solid $border-color;
+    nav{
+        width: 80%;
+        margin: auto;
+        background-color: $header-bg;
+        margin-top: 20px;
+        .navButton{
+            background-color:$main-color!important;
+        }
+        .logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            h3{
+                display: block;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                color: $main-color;
+                text-transform: uppercase;
+                margin-top: 5px;
+            }
+        }
+        .collapseDiv{
+            background-color:$header-bg;
+            justify-content: center;
+        .navbarNav li a{
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $main-color!important;
+            margin: 14px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            &:hover{
+                color: $hover-color!important;
+            }
+        }        
+          
+          }
+          .navRight{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            width: 200px;
+            margin-left: 20px;
+            height: 35px;
+            background-color: $hover-color;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 44px;
+            color: $main-color;
+           
+          }
+        }
+    }
+
+    @media screen and (max-width:991px) {
+       header{
+        background-color: $media-bg-color;
+        nav{
+            background-color:$media-bg-color;
+            .collapseDiv{
+                width: 100%;
+                height: auto;
+                background-color: $main-colorF;
+                .navbarNav li a{
+                  color: $a-color!important;
+                  border-bottom: 1px solid gray;
+                  &:hover{
+                    color: $hover-color!important;
+
+                  }
+                }
+            }
+            .navRight{
+                display: none;
+            }
+        }
+       }
+      }
+      
+    
+#Estate{
+    width: 100%;
+    height:650px;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://preview.colorlib.com/theme/theestate/images/home_slider_bcg.jpg');
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .EstateItem{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                font-size: 92px;
+               font-weight: 700;
+                text-transform: uppercase;
+                color: $main-colorF;
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+    }
+}
+#Properties{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    .container{
+        width: 100%;
+        height: auto;
+        margin: 20px;
+        padding: 20px;
+        .PropertiesHeader{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .PropertiesLine{
+                width: 3px;
+                height: 25px;
+                background-color: $hover-color; 
+                h2{ 
+                    padding-top: 20px;
+                    color: $main-color;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-family: 'Open Sans', sans-serif;  
+                }
+                span{
+               display: block;
+               font-size: 16px;
+               font-weight: 600;
+               color:$span-color;
+               margin-top: 20px; 
+                }
+            }
+        } 
+        .PropertiesBox{
+            width: 100%;
+          margin-top: 20px;
+          height: auto;
+          position: relative;
+          .feature{
+            width: auto;
+            background-color: $hover-color;
+            top:30px;
+            padding: 3px;
+            position: absolute;
+            color: $main-color;
+           p{
+            margin: 8px;
+            font-size: 14px;
+            color: $main-color;
+            font-weight: 600;
+           }
+          }
+          .head{
+            width: 100%;
+            height: auto;
+          }
+          .PropertiesBoxItem{
+            background-color: $box-color;
+            padding: 20px;
+            width: 100%;
+          .head{
+            width: 100%;
+            height: auto;
+          }
+          h4{
+            margin-top: 15px;
+            width: 90%;
+            font-size: 22px;
+            font-weight: 600;
+            color:$media-bg-color ;
+          }
+          .roomText{
+            font-size: 14px;
+           font-weight: 400;
+           color: $text-color;
+            
+          }
+          .roomImage{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+             .roomImageDetails{
+                margin: 9px;
+                p{
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: $text-color; 
+                }
+                span{
+                    font-size: 12px;
+                   font-weight: 400;
+                    color: $span-second-color;
+                    margin-left: 5px;
+                }
+             }
+            
+          }
+          .PropertiesDiv{
+            width: 90%;
+            height: auto;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            button{
+                margin: 6px; 
+                padding: 4px; 
+                background-color:$hover-color;
+                border: none;
+                font-size: 14px;
+                color: $main-colorF;
+                font-weight: 500;
+            }
+         }
+          }
+        
+           
+        .sale{
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 20px;
+            justify-content: flex-start;
+            background-color:$media-bg-color ;
+            img{
+                width: 13%;
+                height: auto;
+               
+            }
+            .saleText{
+                margin-top: 15px;
+                margin-left: 20px;
+                span{
+                    font-size: 14px;
+                   font-weight: 500;
+                   color: $main-colorF;
+
+                }
+                p{
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: $main-color;
+                    margin-top: -3px;
+
+                }
+               } 
+        }
+    }
+
+}}
+#Clients{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://preview.colorlib.com/theme/theestate/images/testimonials_background.jpg');
+   .container{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+     .ClientsItem{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .details{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .line{
+                width: 3px;
+                height: 25px;
+                background-color: $hover-color;
+            }
+            h4{
+                padding-top: 20px;
+                color: $main-color;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: 'Open Sans', sans-serif;
+            }
+            span{
+                display: block;
+               font-size: 16px;
+               font-weight: 600;
+               color: $span-color;
+               margin-top: -4px;
+            }
+
+            }
+            p{  width: 70%;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 2;
+                color: $main-color;
+                margin-bottom: 0px;
+                margin-top: 20px;
+                padding-top: 20px;
+            }
+            .ClientsFooter{
+                padding-top: 20px;
+                margin-top: 20px;
+                img{
+                    border-radius: 50%;
+                    margin-top: 20px;
+                }
+                h5{
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: $hover-color;
+                    margin-top: 17px;
+                 }
+                 span{
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: $main-color;
+                    margin-top: 4px
+                 }
+                }
+            }
+        }
+     }
+   
+#CitiesClients{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('https://go.geobluetravelinsurance.com/images/loading-dotted-map.png');
+   .container{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    .CitiesClientsHeader{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     .Citiesline{
+                width: 3px;
+                height: 25px;
+                background-color: $hover-color;
+     }
+     h4{
+        padding-top: 20px;
+        color: $media-bg-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    span{
+        display: block;
+       font-size: 16px;
+       font-weight: 600;
+       color: $span-color;
+       margin-top: -4px;
+    }
+    }
+    .CitiesClientsDetails{
+        margin-top: 20px;
+       text-align: center;
+       position: relative;
+       display: flex;
+       padding: 5px;
+       justify-content: center;
+       align-items: center;
+       transition: 1s;
+       &:hover{
+        img{
+            cursor: pointer;
+            transition: 1s;
+            opacity: .5;
+        }
+        a{
+            display: block;
+        }
+       }
+       
+        img{
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        .area{
+            bottom:  30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+           padding: 10px;
+            background-color:$hover-color ;
+            font-size: 14px;
+            color: $main-color;
+            font-weight: 700;
+        }
+        a{
+            display: none;
+            font-size: 20px;
+            color: $main-color;
+            position: absolute;
+        }
+    }
+   }
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color:$media-bg-color ;
+    padding: 30px;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .foot{
+            span{
+                font-size: 17px;
+                color: $main-color;
+            }
+            i{
+                color: $icon-color;
+            }
+        }
+    }
+}
